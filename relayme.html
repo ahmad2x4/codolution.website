@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Codolutions - Homepage</title>
+    <title>Relay ME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="An ode to Metro.">
     <meta name="author" content="Thomas Park">
@@ -10,11 +10,11 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="css/coin-slider-styles.css" rel="stylesheet" />
+
     <link href="css/flatly/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="js/slippry/slippry.css" rel="stylesheet">
     <link href="css/flatly/bootswatch.css" rel="stylesheet">
+    <link href="js/slippry/slippry.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
@@ -35,7 +35,7 @@
                 <a class="brand" href="#">Codolutions</a>
                 <div class="nav-collapse">
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li class="active"><a href="products.html">Products</a></li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
 
         <!-- Masthead
 ================================================== -->
-        <header class="jumbotron subhead" id="overview">
+        <header class="jumbotron subhead" id="Header1">
             <div class="row">
                 <div class="span6">
                     <img src="img/logo_big.png" alt="Logo" />
@@ -61,30 +61,30 @@
             </div>
             <div class="subnav">
                 <ul class="nav nav-pills">
-                    <li><a href="#relayme">Relay Me</a></li>
-                    <li><a href="#radiojavan">RadioJavan</a></li>
-                    <li><a href="#catchup">Catch UP</a></li>
+                    <li><a href="#introduction">Introduction</a></li>
 
                 </ul>
             </div>
         </header>
 
-
-
-
-        <!-- Typography
-================================================== -->
-        <section id="relayme">
-            <div class="page-header">
-                <h1><a href="relayme.html">Relay Me</a></h1>
-            </div>
-            <!-- Headings & Paragraph Copy -->
+        <section id="Header">
             <div class="row">
-                <div class="span10">
-                    <p>Relay ME is a free Android app that forwards your texts to an email address you provide. It uses a GMail account that you control to send your texts as emails. Your main email inbox, where your texts go, can be anywhere. In order to use this app, you are going to need a GMail account, Internet connectivity, and a browser on your phone. It is available on <a href="https://play.google.com/store/apps/details?id=com.tinywebgears.relayme">Google Play Store</a>. If you can't access Play Store please contact us so that we can work out an alternative.</p>
+                <div class="span5">
+                    <img src="img/relayme.png" alt="Logo" width="256px" height="256px" />
+                </div>
+                <div class="span5">
+                    <p class="lead">Relay ME</p>
+                    <p>SMS via Email</p>
+                    <p>
+                        No worries,<br />
+                        if you have left your phone at home.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.tinywebgears.relayme">
+                        <img alt="Get it on Google Play"
+                            src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+                    </a>
                 </div>
                 <div class="span2">
-
                     <ul id="RelayMeImages">
                         <li>
                             <a href="#slide1">
@@ -112,67 +112,44 @@
 
             </div>
         </section>
-        <section id="radiojavan">
-            <div class="page-header">
-                <h1>Radio Javan</h1>
-            </div>
-            <!-- Headings & Paragraph Copy -->
-            <div class="row">
-                <div class="span10">
-                    <p>
-                        The best Persian music and entertainment your Windows Phone!
-Listen to the number one Persian music radio station wherever you are. It is available on <a href="http://www.windowsphone.com/en-us/store/app/radiojavan/70495b7b-18bc-4261-9f70-bd81f94e33af">Windows Phone Store</a>
-                    </p>
-                </div>
-                <div class="span2">
-                    <ul id="RadioJanvanImages">
-                        <li>
-                            <a href="#slide1">
-                                <img src="img/RadioJavan/RadioJavan1.png" width="170">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#slide2">
-                                <img src="img/RadioJavan/RadioJavan2.png" width="170">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#slide3">
-                                <img src="img/RadioJavan/RadioJavan3.png" width="170">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#slide4">
-                                <img src="img/RadioJavan/RadioJavan4.png" width="170">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#slide4">
-                                <img src="img/RadioJavan/RadioJavan5.png" width="170">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
+
+
+
+
+
+        <!-- Typography
+================================================== -->
+        <section id="introduction">
+            <!-- Headings & Paragraph Copy -->
+            <div class="page-header">
+                <h1>Introduction</h1>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <p>Relay ME is a free Android app that forwards your texts to an email address you provide. It uses a GMail account that you control to send your texts as emails. Your main email inbox, where your texts go, can be anywhere. In order to use this app, you are going to need a GMail account, Internet connectivity, and a browser on your phone. It is available on <a href="https://play.google.com/store/apps/details?id=com.tinywebgears.relayme">Google Play Store</a>. If you can't access Play Store please contact us so that we can work out an alternative.</p>
+                    <p>Please check <a href="https://bitbucket.org/codolutions/relay-me/wiki">the project wiki</a> for more information, frequently asked questions, and common issues.</p>
+                </div>
+            </div>
+            <div class="page-header">
+                <h1>Privacy Policy</h1>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <p>Relay ME needs to know the email address used to send out emails, also the target email address if they are different. It also keeps details of recent text messages in order to display in the log and retry should an error occur. All information mentioned here is kept locally in the app and can be deleted at any time by clearing application data.</p>
+                    <p>It is highly recommended to use a separate email account for the gateway, since you probably don't want an application have access to your main email account. This isn't what we want either, and that's why this app works differently than similar products. We encourage you to care about your privacy.</p>
+                </div>
+            </div>
+            <div class="page-header">
+                <h1>Disclaimer</h1>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <p>Relay ME is developed by Codolutions, we, "as is" and "with all faults". We make no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this application. There are inherent dangers in the use of any software, and you are solely responsible for determining whether this application is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and we will not be liable for any damages you may suffer in connection with using, modifying, or distributing this application.</p>
+                </div>
             </div>
         </section>
-        <section id="catchup">
-            <div class="page-header">
-                <h1>Catch UP</h1>
-            </div>
-            <!-- Headings & Paragraph Copy -->
-            <div class="row">
-                <div class="span10">
-                    <p>
-                        Comming soon.
-                    </p>
-                </div>
-                <div class="span2">
-                    <img src="img/catchup.png" />
-                </div>
 
-            </div>
-        </section>
 
         <!-- Footer
       ================================================== -->
@@ -196,14 +173,17 @@ Listen to the number one Persian music radio station wherever you are. It is ava
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/application.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="../js/application.js"></script>
+    <script src="js/less.js" type="text/javascript"></script>
     <script src="js/slippry/slippry.min.js"></script>
     <script>
         jQuery('#RelayMeImages').slippry();
         jQuery('#RadioJanvanImages').slippry();
 
     </script>
+
 </body>
 
 </html>
