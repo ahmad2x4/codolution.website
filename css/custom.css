@@ -242,3 +242,34 @@ div.download-list {
   height: 48px;
   margin: 4px;
 }
+
+a.button-link {
+  color:#fff;
+  display:inline-block;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:bold;
+  padding:0px 25px;
+  border-radius:5px;
+  background:#39a5e2;
+  line-height:50px;
+  width:100%;
+  text-align: center;
+  box-shadow: 0 2px 0 0 rgba(255,255,255,0.2) inset,0 2px 3px rgba(0,0,0,0.3);
+  -webkit-transition: background 1s ease;
+   -moz-transition: background 1s ease;
+   -o-transition: background 1s ease;
+   -ms-transition: background 1s ease;
+   transition: background 1s ease;
+   margin-top:2px !important;
+}
+
+a.button-link:hover {
+  background:#1c97dd;
+  -webkit-transition: background 1s ease;
+   -moz-transition: background 1s ease;
+   -o-transition: background 1s ease;
+   -ms-transition: background 1s ease;
+   transition: background 1s ease;
+}
+
