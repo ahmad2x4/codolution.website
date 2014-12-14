@@ -5,23 +5,29 @@
     <description>Codes and Solutions, turning your ideas into business.</description>
     <link>http://codolutions.com/</link>
     <atom:link href="http://codolutions.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Dec 2014 00:00:11 +1100</pubDate>
-    <lastBuildDate>Mon, 15 Dec 2014 00:00:11 +1100</lastBuildDate>
+    <pubDate>Mon, 15 Dec 2014 00:55:12 +1100</pubDate>
+    <lastBuildDate>Mon, 15 Dec 2014 00:55:12 +1100</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
         <title>Catch UP</title>
-        <description>&lt;h5 id=&quot;background&quot;&gt;Background:&lt;/h5&gt;
-&lt;p&gt;I am not a Facebook user, well I was until I decided that &lt;a href=&quot;http://www.ted.com/talks/sherry_turkle_alone_together&quot;&gt;enough is enough&lt;/a&gt;. Even then, I used to miss a lot amongst all the noise. Now I have a couple of friends in Facebook I don’t follow any more, plus a few in other networks like Google+, Twitter, Foursquare, etc I catch up with which once in a while, missing important stuff from them again, now because it’s all over the place. If this describes you as a social network user, you will probably want to check &lt;a href=&quot;http://codolutions.com/catchup.html&quot;&gt;Catch UP&lt;/a&gt; out.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img style=&quot;float: right; padding-left: 16px;&quot; src=&quot;/img/blog/catchup-screenshot.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Catch UP aims to bring the most important stuff from different networks in a single place, allowing you to make sure you don’t miss updates from your family or best friend. There are a few similar applications, but &lt;a href=&quot;http://codolutions.com/about.html&quot;&gt;we&lt;/a&gt; thought we can give it a try and learn more about social networks and human-computer interaction along the way.
-##### This is about:&lt;/p&gt;
+&lt;h5 id=&quot;background&quot;&gt;Background:&lt;/h5&gt;
+&lt;p&gt;I am not a Facebook user, well I was until I decided that &lt;a href=&quot;http://www.ted.com/talks/sherry_turkle_alone_together&quot;&gt;enough is enough&lt;/a&gt;. Even then, I used to miss a lot amongst all the noise. Now I have a couple of friends in Facebook I don’t follow any more, plus a few in other networks like Google+, Twitter, Foursquare, etc I catch up with which once in a while, missing important stuff from them again, now because it’s all over the place. If this describes you as a social network user, you will probably want to check &lt;a href=&quot;http://codolutions.com/catchup.html&quot;&gt;Catch UP&lt;/a&gt; out.
+Catch UP aims to bring the most important stuff from different networks in a single place, allowing you to make sure you don’t miss updates from your family or best friend. There are a few similar applications, but &lt;a href=&quot;http://codolutions.com/about.html&quot;&gt;we&lt;/a&gt; thought we can give it a try and learn more about social networks and human-computer interaction along the way.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;this-is-about&quot;&gt;This is about:&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;taking control: Users should decide what they want to spend their time on.&lt;/li&gt;
   &lt;li&gt;respecting users: We want to protect users from unwanted advertisement noise.&lt;/li&gt;
   &lt;li&gt;avoiding &lt;a href=&quot;http://www.psychologytoday.com/blog/brain-wise/201209/why-were-all-addicted-texts-twitter-and-google&quot;&gt;constants rewards&lt;/a&gt;: We want users to get things done instead of checking social updates over and over again.&lt;/li&gt;
-  &lt;li&gt;catching up: We want to provide more opportunities for people to catch up together in the real world, by providing more context around possibilities and shared interests.&lt;/li&gt;
+  &lt;li&gt;catching up: We want to provide more opportunities for people to catch up together in the real world, by providing more context around possibilities and shared interests.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&quot;how-it-will-work&quot;&gt;How it will work:&lt;/h5&gt;
@@ -29,7 +35,9 @@
 &lt;ul&gt;
   &lt;li&gt;We plan to provide this for free, for all the users. The base functionality will be free of advertisement and free of charge, forever.&lt;/li&gt;
   &lt;li&gt;We will provide some extra features for a price, expecting a percentage of users to take them up, covering some of the development and running costs.&lt;/li&gt;
-  &lt;li&gt;In order to provide an acceptable experience for everyone, we might impose some limits in the app, since we have some infrastructure constraints and usage quota imposed by networks we connect to. We try our best to give users a better experience as we continue working on this.&lt;/li&gt;
+  &lt;li&gt;In order to provide an acceptable experience for everyone, we might impose some limits in the app, since we have some infrastructure constraints and usage quota imposed by networks we connect to. We try our best to give users a better experience as we continue working on this.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&quot;how-it-is-done&quot;&gt;How it is done:&lt;/h5&gt;
@@ -38,13 +46,16 @@
   &lt;li&gt;It allows multiple accounts of the same network linked in the application. One of the problems of using multiple accounts is logging in and out all the time. Once these accounts are linked, they can be used at the same time with no switching required.&lt;/li&gt;
   &lt;li&gt;It uses OAuth so that users authorize the access to their accounts without compromising their security (revealing their password).&lt;/li&gt;
   &lt;li&gt;We have made a decision to use browser-based OAuth flow, so that users can make sure they are securely connected to their social network website using their trusted browser. It eliminates the possibility of phishing attacks like &lt;a href=&quot;http://thehackernews.com/2014/08/hacking-gmail-account-mobile-app.html&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;It is not aiming to replace client apps for the social networks it connects to. It won’t end up implementing all the features of each social network either. All the activities displayed in the app link back to the original update and open in the native client of that network if one is already installed, which can be used for anything that’s missing here.&lt;/li&gt;
+  &lt;li&gt;It is not aiming to replace client apps for the social networks it connects to. It won’t end up implementing all the features of each social network either. All the activities displayed in the app link back to the original update and open in the native client of that network if one is already installed, which can be used for anything that’s missing here.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&quot;final-thoughts&quot;&gt;Final thoughts:&lt;/h5&gt;
-&lt;p&gt;Catch UP is currently available on &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.codolutions.catchup&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;http://www.windowsphone.com/en-au/store/app/catch-up/fbb630f5-38dc-4676-bef3-5ec6e9786afa&quot;&gt;Windows Phone&lt;/a&gt; only. iOS and web client is being considered, but nothing is planned as of now.&lt;br /&gt;
-Feel free to give us &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#097;&amp;#116;&amp;#099;&amp;#104;&amp;#117;&amp;#112;&amp;#064;&amp;#099;&amp;#111;&amp;#100;&amp;#111;&amp;#108;&amp;#117;&amp;#116;&amp;#105;&amp;#111;&amp;#110;&amp;#115;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;your feedback&lt;/a&gt; in order to make this a better product. What do you care about most? What do you want to see added to this next?&lt;br /&gt;
-You might ask, what is about the logo? It talks about the infinite cycle that you have to break somehow to get a living ;-)&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;float: left; padding-right: 16px; width: 120px; height: 100px;&quot; src=&quot;/img/blog/catchup-logo-small.png&quot; /&gt;
+Catch UP is currently available on &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.codolutions.catchup&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;http://www.windowsphone.com/en-au/store/app/catch-up/fbb630f5-38dc-4676-bef3-5ec6e9786afa&quot;&gt;Windows Phone&lt;/a&gt; only. iOS and web client is being considered, but nothing is planned as of now. Feel free to give us &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#097;&amp;#116;&amp;#099;&amp;#104;&amp;#117;&amp;#112;&amp;#064;&amp;#099;&amp;#111;&amp;#100;&amp;#111;&amp;#108;&amp;#117;&amp;#116;&amp;#105;&amp;#111;&amp;#110;&amp;#115;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;your feedback&lt;/a&gt; in order to make this a better product. What do you care about most? What do you want to see added to this next? You might ask, what is about the logo? It talks about the infinite cycle that you have to break somehow to get a living ;-)
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 15 Dec 2014 10:40:06 +1100</pubDate>
