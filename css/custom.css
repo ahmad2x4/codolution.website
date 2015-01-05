@@ -17,10 +17,6 @@
 }
 
 .totop {
-  position:fixed;
-  bottom:0px;
-  right:0px;
-  z-index:500;
   background:#480a0a;
 }
 
