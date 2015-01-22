@@ -88,28 +88,63 @@ footer hr{
   border:1px solid #999999; 
 }
 
+.shots .shot-content-body h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+.shots .shot-content-body h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
 img.img-small-icon {
   display: block;
   width: 40px;
   width: 40px;
 }
 
+.block{
+	padding-top:20px;
+	padding-bottom:30px;
+	border-bottom:1px solid #e2e2e2;
+}
+
 /* Carousel - Overrides */
 
 .carousel-inner .item {
-    background: #eee;    
-    height: 480px !important;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    )
 }
+
+.carousel-inner .item img {
+    height: auto !important;
+    width:80% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
 .carousel-caption {
   position: absolute;
   bottom: 30px;
   left: 10%;
   right: 10%;
 }
+
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
 }
+
 @media screen and (min-width: 768px) {
   .carousel-caption {
     bottom: 40px;
@@ -127,6 +162,7 @@ img.img-small-icon {
 .carousel-indicators li.active {
   background-color: #611;
 }
+
 .carousel-indicators li {
   background-color: #eee;
 }
@@ -141,6 +177,7 @@ img.img-small-icon {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
+
 .carousel-control.right {
   left: auto;
   right: 0;
@@ -151,6 +188,21 @@ img.img-small-icon {
 }
 
 /* Carousel - Additions */
+
+.carousel-text-container {
+    text-align:center;
+    position:absolute;
+    top:30px;
+    display: block;
+    width: 100%;
+}
+
+.carousel-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+}
 
 .carousel-icon {
   vertical-align: middle;
@@ -184,32 +236,6 @@ img.img-small-icon {
 
 .carousel-picture-bottom img {
   max-height: 80px;
-}
-
-.carousel-inner h3 {
-  font-family: 'Lobster Two', cursive;
-  font-size:40px;
-  font-weight:400 !important;
-  color:#555;
-  padding-top:30px !important;
-  padding-bottom:15px !important;
-}
-
-.carousel-inner h4 {
-  font-family: 'Lobster Two', cursive;
-  font-size:28px;
-  font-weight:300 !important;
-  color:#555;
-  margin-top:10px !important;
-  margin-bottom:0px !important;
-}
-
-.carousel-inner h5 {
-  font-size:20px;
-  font-weight:200 !important;
-  color:#555;
-  margin-top:0px !important;
-  margin-bottom:0px !important;
 }
 
 /* Other Customization */
