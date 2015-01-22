@@ -51,25 +51,68 @@ footer {
   color:#ccc;
 }
 
-footer hr{
+footer hr {
   margin-top: 0px;
   margin-bottom:10px;
   border-top: #101010 1px solid;
   border-bottom: #222 1px solid;
 }
 
-.blog .blog-item{
+.blog .blog-item {
   width:100%;
 }
 
-.blog .blog-item .blog-img a img{
+.blog .blog-item .blog-img a img {
   width: 100%;
-  border:3px solid #fff;
+  border:5px solid #fff;
   box-shadow:0px 0px 2px #888;
 }
 
 .blog-single .blog-single-content {
   width:100%;
+}
+
+.blog .blog-item  p { 
+    color: #333;
+    font-family: "georgia","Open Sans","sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.blog-single .blog-single-item p { 
+    color: #333;
+    font-family: "georgia","Open Sans","sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.blog-single .blog-single-item p a {
+    color: #963;
+}
+
+.blog-single .blog-single-item p a:visited {
+    color: #642;
+}
+
+.blog-single .blog-single-item li { 
+    color: #333;
+    font-family: "georgia","Open Sans","sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.blog-single .blog-single-item li a {
+    color: #963;
+}
+
+.blog-single .blog-single-item li a:visited {
+    color: #642;
 }
 
 .shots div.screenshots {
@@ -201,7 +244,7 @@ img.img-small-icon {
     font-size: 32px;
     font-weight: 600;
     color: #fff;
-    font-family: 'Open Sans',sans-serif;
+    font-family: "Open Sans","sans-serif";
 }
 
 .carousel-icon {
