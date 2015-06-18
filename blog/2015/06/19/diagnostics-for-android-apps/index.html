@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta charset="utf-8">
-    <title>Catch UP</title>
+    <title>Diagnostics for Android apps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Codolutions public website">
     <meta name="author" content="Codolutions">
@@ -85,11 +85,11 @@
 							<!-- Blog Single Item -->
 							<div class="blog-single-item">
 								<!-- Heading -->
-								<h4><a href="#">Catch UP</a></h4>
+								<h4><a href="#">Diagnostics for Android apps</a></h4>
 								<!-- Blog Single Meta -->
 								<div class="blog-single-meta">
 									<!-- Blog Icons -->
-									<i class="fa fa-calendar calender"></i>&nbsp;2014-12-15 10:40:06 +1100&nbsp;&nbsp;
+									<i class="fa fa-calendar calender"></i>&nbsp;2015-06-19 07:35:12 +1000&nbsp;&nbsp;
 									<i class="fa fa-user user"></i>&nbsp; • Norman&nbsp;&nbsp;
 								</div>
 								<!-- Image -->
@@ -97,46 +97,88 @@
 								<!-- Paragraph -->
 								<p>
 									<article class="post-content">
-										<p>I am not a Facebook user, well I was until I decided that <a href="http://www.ted.com/talks/sherry_turkle_alone_together">enough is enough</a>. Even then, I used to miss a lot amongst all the noise. Now I have a couple of friends in Facebook I don’t follow any more, plus a few in other networks like Google+, Twitter, Foursquare, etc I catch up with which once in a while, missing important stuff from them again, now because it’s all over the place. If this describes you as a social network user, you will probably want to check <a href="http://codolutions.com/catchup.html">Catch UP</a> out.
-Catch UP aims to bring the most important stuff from different networks in a single place, allowing you to make sure you don’t miss updates from your family or best friend. There are a few similar applications, but <a href="http://codolutions.com/about.html">we</a> thought we can give it a try and learn more about social networks and human-computer interaction along the way.
+										<p>Let’s assume you have got a great Android app, how do you go about diagnosing
+problems users have with it? One big problem with mobile apps is the fact that
+it is gone out of your hands and you can’t see what’s happening when things go
+wrong.
 <br />
 <br /></p>
 
-<h5 id="what-this-is-about">What this is about</h5>
-
-<ul>
-  <li>taking control: Users should decide what they want to spend their time on.</li>
-  <li>respecting users: We want to protect users from unwanted advertisement noise.</li>
-  <li>avoiding <a href="http://www.psychologytoday.com/blog/brain-wise/201209/why-were-all-addicted-texts-twitter-and-google">constants rewards</a>: We want users to get things done instead of checking social updates over and over again.</li>
-  <li>catching up: We want to provide more opportunities for people to catch up together in the real world, by providing more context around possibilities and shared interests.
+<p>Ideally, you would ask the user to send you some logs, but it is not as easy as
+it should be. Some time ago you could install an app that would read logs for
+you, but in a fairly recent versions of Android they can only see their own logs
+which is not very useful. You could ask users to root their device, or install
+developer toolkit and use ADB. Good luck trying. This is when a simple
+diagnostic tools could be helpful, if it allowed users to send your
+application’s logs back to you. Please meet
+<a href="https://github.com/codolutions/diagnostic-tools">diagnostic-tools</a>.
 <br />
-<br /></li>
-</ul>
+<br /></p>
 
-<h5 id="how-it-will-work">How it will work</h5>
-
-<ul>
-  <li>We plan to provide this for free, for all the users. The base functionality will be free of advertisement and free of charge, forever.</li>
-  <li>We will provide some extra features for a price, expecting a percentage of users to take them up, covering some of the development and running costs.</li>
-  <li>In order to provide an acceptable experience for everyone, we might impose some limits in the app, since we have some infrastructure constraints and usage quota imposed by networks we connect to. We try our best to give users a better experience as we continue working on this.
+<p>Here you have a jar file you should add to your project, which will give you a
+LogCollector. This class can read application logs and send them in an email
+with some information about the runtime environment. It actually doesn’t send
+email, it prepares it and lets user decide how to send it. Give it a try by
+installing <a href="https://github.com/codolutions/diagnostic-tools/blob/master/diagnostic-tools-demo.apk">the demo
+app</a>
+or building it from <a href="https://github.com/codolutions/diagnostic-tools/tree/master/diagnostic-tools-demo">source
+code</a>.
 <br />
-<br /></li>
-</ul>
+<br /></p>
 
-<h5 id="how-it-is-done">How it is done</h5>
-
-<ul>
-  <li>It allows multiple accounts of the same network linked in the application. One of the problems of using multiple accounts is logging in and out all the time. Once these accounts are linked, they can be used at the same time with no switching required.</li>
-  <li>It uses OAuth so that users authorize the access to their accounts without compromising their security (revealing their password).</li>
-  <li>We have made a decision to use browser-based OAuth flow, so that users can make sure they are securely connected to their social network website using their trusted browser. It eliminates the possibility of phishing attacks like <a href="http://thehackernews.com/2014/08/hacking-gmail-account-mobile-app.html">this one</a>.</li>
-  <li>It is not aiming to replace client apps for the social networks it connects to. It won’t end up implementing all the features of each social network either. All the activities displayed in the app link back to the original update and open in the native client of that network if one is already installed, which can be used for anything that’s missing here.
+<p>What you need to do is (refer to the demo app if something is not clear):
 <br />
-<br /></li>
-</ul>
+<br /></p>
 
-<h5 id="final-thoughts">Final thoughts</h5>
-<p><img style="float: left; padding-right: 16px; width: 120px; height: 100px;" src="/img/blog/catchup-logo-small.png" />
-Catch UP is currently available on <a href="https://play.google.com/store/apps/details?id=com.codolutions.catchup">Android</a> and <a href="http://www.windowsphone.com/en-au/store/app/catch-up/fbb630f5-38dc-4676-bef3-5ec6e9786afa">Windows Phone</a> only. iOS and web client is being considered, but nothing is planned as of now. Feel free to give us <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#097;&#116;&#099;&#104;&#117;&#112;&#064;&#099;&#111;&#100;&#111;&#108;&#117;&#116;&#105;&#111;&#110;&#115;&#046;&#099;&#111;&#109;">your feedback</a> in order to make this a better product. What do you care about most? What do you want to see added to this next? You might ask, what is about the logo? It talks about the infinite cycle that you have to break somehow to get a living ;-)
+<p>Add <a href="https://github.com/codolutions/diagnostic-tools/blob/master/diagnostic-tools.jar">this jar
+file</a>
+to your Android project. You can also build it yourself from <a href="https://github.com/codolutions/diagnostic-tools/tree/master/diagnostic-tools">source
+code</a>.
+However, the demo app defines a project dependency instead.
+<br />
+<br /></p>
+
+<p>Add a provider as shown below to your application. This is needed by
+<a href="https://developer.android.com/reference/android/support/v4/content/FileProvider.html">FileProvider</a>
+to share the log file with the email sending app as an attachment.
+<br /></p>
+
+<pre><code>&lt;provider android:name="android.support.v4.content.FileProvider" android:authorities="com.codolutions.diagnostics.demo.fileprovider" android:exported="false" android:grantUriPermissions="true" &gt;
+    &lt;meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths" /&gt;
+&lt;/provider&gt;
+</code></pre>
+<p><br /></p>
+
+<p>Add the XML file mentioned in the configuration above, which specifies the path
+for the files exported by this provider.
+<br /></p>
+
+<pre><code>&lt;paths xmlns:android="http://schemas.android.com/apk/res/android" &gt;
+    &lt;files-path name="files_dir" path="." /&gt;
+&lt;/paths&gt;
+</code></pre>
+<p><br /></p>
+
+<p>And finally, when you want to send logs, call the log collector.
+<br /></p>
+
+<pre><code>mLogCollector.collect();
+mLogCollector.sendLogs("info@codolutions.com", "Error Log", "Hey there, here is your log!", "Some extra information, just because you wanted.", "com.codolutions.diagnostics.demo.fileprovider");
+</code></pre>
+<p><br /></p>
+
+<p>Just one more thing that could be useful: If you are lucky enough to spot the
+issue and fix it, you go ahead and upload a new version, but there is no
+guarantee users will opt-in to your fix. One thing that can help with that is a
+kill switch. Using the kill switch you can remotely disable particular versions
+of your app and force users to upgrade to the latest. I’d recommend you to have
+at least a very basic kill switch from day 1, you never know when you are going
+to use it.
+<br />
+<br /></p>
+
+<p>Credits: I have borrowed some code from
+<a href="https://code.google.com/p/android-log-collector/">https://code.google.com/p/android-log-collector/</a>.
 <br />
 <br /></p>
 

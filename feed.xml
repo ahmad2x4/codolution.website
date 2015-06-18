@@ -5,9 +5,104 @@
     <description>Codes and Solutions, turning your ideas into business.</description>
     <link>http://codolutions.com/</link>
     <atom:link href="http://codolutions.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Jan 2015 22:37:12 +1100</pubDate>
-    <lastBuildDate>Fri, 23 Jan 2015 22:37:12 +1100</lastBuildDate>
+    <pubDate>Fri, 19 Jun 2015 09:45:35 +1000</pubDate>
+    <lastBuildDate>Fri, 19 Jun 2015 09:45:35 +1000</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Diagnostics for Android apps</title>
+        <description>&lt;p&gt;Let’s assume you have got a great Android app, how do you go about diagnosing
+problems users have with it? One big problem with mobile apps is the fact that
+it is gone out of your hands and you can’t see what’s happening when things go
+wrong.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ideally, you would ask the user to send you some logs, but it is not as easy as
+it should be. Some time ago you could install an app that would read logs for
+you, but in a fairly recent versions of Android they can only see their own logs
+which is not very useful. You could ask users to root their device, or install
+developer toolkit and use ADB. Good luck trying. This is when a simple
+diagnostic tools could be helpful, if it allowed users to send your
+application’s logs back to you. Please meet
+&lt;a href=&quot;https://github.com/codolutions/diagnostic-tools&quot;&gt;diagnostic-tools&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here you have a jar file you should add to your project, which will give you a
+LogCollector. This class can read application logs and send them in an email
+with some information about the runtime environment. It actually doesn’t send
+email, it prepares it and lets user decide how to send it. Give it a try by
+installing &lt;a href=&quot;https://github.com/codolutions/diagnostic-tools/blob/master/diagnostic-tools-demo.apk&quot;&gt;the demo
+app&lt;/a&gt;
+or building it from &lt;a href=&quot;https://github.com/codolutions/diagnostic-tools/tree/master/diagnostic-tools-demo&quot;&gt;source
+code&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;What you need to do is (refer to the demo app if something is not clear):
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Add &lt;a href=&quot;https://github.com/codolutions/diagnostic-tools/blob/master/diagnostic-tools.jar&quot;&gt;this jar
+file&lt;/a&gt;
+to your Android project. You can also build it yourself from &lt;a href=&quot;https://github.com/codolutions/diagnostic-tools/tree/master/diagnostic-tools&quot;&gt;source
+code&lt;/a&gt;.
+However, the demo app defines a project dependency instead.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Add a provider as shown below to your application. This is needed by
+&lt;a href=&quot;https://developer.android.com/reference/android/support/v4/content/FileProvider.html&quot;&gt;FileProvider&lt;/a&gt;
+to share the log file with the email sending app as an attachment.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;provider android:name=&quot;android.support.v4.content.FileProvider&quot; android:authorities=&quot;com.codolutions.diagnostics.demo.fileprovider&quot; android:exported=&quot;false&quot; android:grantUriPermissions=&quot;true&quot; &amp;gt;
+    &amp;lt;meta-data android:name=&quot;android.support.FILE_PROVIDER_PATHS&quot; android:resource=&quot;@xml/file_provider_paths&quot; /&amp;gt;
+&amp;lt;/provider&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Add the XML file mentioned in the configuration above, which specifies the path
+for the files exported by this provider.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;paths xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; &amp;gt;
+    &amp;lt;files-path name=&quot;files_dir&quot; path=&quot;.&quot; /&amp;gt;
+&amp;lt;/paths&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;And finally, when you want to send logs, call the log collector.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mLogCollector.collect();
+mLogCollector.sendLogs(&quot;info@codolutions.com&quot;, &quot;Error Log&quot;, &quot;Hey there, here is your log!&quot;, &quot;Some extra information, just because you wanted.&quot;, &quot;com.codolutions.diagnostics.demo.fileprovider&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just one more thing that could be useful: If you are lucky enough to spot the
+issue and fix it, you go ahead and upload a new version, but there is no
+guarantee users will opt-in to your fix. One thing that can help with that is a
+kill switch. Using the kill switch you can remotely disable particular versions
+of your app and force users to upgrade to the latest. I’d recommend you to have
+at least a very basic kill switch from day 1, you never know when you are going
+to use it.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Credits: I have borrowed some code from
+&lt;a href=&quot;https://code.google.com/p/android-log-collector/&quot;&gt;https://code.google.com/p/android-log-collector/&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 19 Jun 2015 07:35:12 +1000</pubDate>
+        <link>http://codolutions.com/blog/2015/06/19/diagnostics-for-android-apps</link>
+        <guid isPermaLink="true">http://codolutions.com/blog/2015/06/19/diagnostics-for-android-apps</guid>
+        
+        
+      </item>
     
       <item>
         <title>Catch UP</title>
@@ -59,10 +154,6 @@ Catch UP is currently available on &lt;a href=&quot;https://play.google.com/stor
         <link>http://codolutions.com/blog/2014/12/15/catch-up</link>
         <guid isPermaLink="true">http://codolutions.com/blog/2014/12/15/catch-up</guid>
         
-        
-        <category>theme</category>
-        
-        <category>update</category>
         
       </item>
     
