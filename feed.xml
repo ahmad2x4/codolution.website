@@ -5,8 +5,8 @@
     <description>Codes and Solutions, turning your ideas into business.</description>
     <link>http://codolutions.com/</link>
     <atom:link href="http://codolutions.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 27 Nov 2015 17:50:04 +1100</pubDate>
-    <lastBuildDate>Fri, 27 Nov 2015 17:50:04 +1100</lastBuildDate>
+    <pubDate>Tue, 26 Apr 2016 22:10:05 +1000</pubDate>
+    <lastBuildDate>Tue, 26 Apr 2016 22:10:05 +1000</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -106,39 +106,34 @@ to use it.
     
       <item>
         <title>Catch UP</title>
-        <description>&lt;p&gt;I am not a Facebook user, well I was until I decided that &lt;a href=&quot;http://www.ted.com/talks/sherry_turkle_alone_together&quot;&gt;enough is enough&lt;/a&gt;. Even then, I used to miss a lot amongst all the noise. Now I have a couple of friends in Facebook I don’t follow any more, plus a few in other networks like Google+, Twitter, Foursquare, etc I catch up with which once in a while, missing important stuff from them again, now because it’s all over the place. If this describes you as a social network user, you will probably want to check &lt;a href=&quot;http://codolutions.com/catchup.html&quot;&gt;Catch UP&lt;/a&gt; out.
-Catch UP aims to bring the most important stuff from different networks in a single place, allowing you to make sure you don’t miss updates from your family or best friend. There are a few similar applications, but &lt;a href=&quot;http://codolutions.com/about.html&quot;&gt;we&lt;/a&gt; thought we can give it a try and learn more about social networks and human-computer interaction along the way.
+        <description>&lt;p&gt;I have a couple of friends in Facebook, Google+, Twitter, Foursquare, etc. I try to catch up with them once in a while, but I always miss important stuff and life events because I don’t check frequently enough. If this describes you as a social network user, you will probably want to check &lt;a href=&quot;http://codolutions.com/catchup.html&quot;&gt;Catch UP&lt;/a&gt; out.
+Catch UP aims to bring the most important stuff from different networks in a single place, allowing you to make sure you don’t miss updates from your family members or best friends. There are a few similar applications out there, but &lt;a href=&quot;http://codolutions.com/about.html&quot;&gt;we&lt;/a&gt; thought we can give it a try and learn more about social networks along the way.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;what-this-is-about&quot;&gt;What this is about&lt;/h5&gt;
+&lt;h5 id=&quot;how-it-works&quot;&gt;How it works&lt;/h5&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;taking control: Users should decide what they want to spend their time on.&lt;/li&gt;
-  &lt;li&gt;respecting users: We want to protect users from unwanted advertisement noise.&lt;/li&gt;
-  &lt;li&gt;avoiding &lt;a href=&quot;http://www.psychologytoday.com/blog/brain-wise/201209/why-were-all-addicted-texts-twitter-and-google&quot;&gt;constants rewards&lt;/a&gt;: We want users to get things done instead of checking social updates over and over again.&lt;/li&gt;
-  &lt;li&gt;catching up: We want to provide more opportunities for people to catch up together in the real world, by providing more context around possibilities and shared interests.
+  &lt;li&gt;You connect your social accounts, via OAuth (no password entered in the app)&lt;/li&gt;
+  &lt;li&gt;You select a list of people you would like to filter your feed with&lt;/li&gt;
+  &lt;li&gt;In separate dashboards you will see your own posts, and updates coming from your list&lt;/li&gt;
+  &lt;li&gt;You will see the hot items, those who attracted a lot of attention, in a separate dashboard&lt;/li&gt;
+  &lt;li&gt;You can see how connections in your list have been engaged with your own or each others’ posts&lt;/li&gt;
+  &lt;li&gt;You can get notifications about new updates from your list
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&quot;how-it-will-work&quot;&gt;How it will work&lt;/h5&gt;
+&lt;h5 id=&quot;considerations&quot;&gt;Considerations&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;We plan to provide this for free, for all the users. The base functionality will be free of advertisement and free of charge, forever.&lt;/li&gt;
   &lt;li&gt;We will provide some extra features for a price, expecting a percentage of users to take them up, covering some of the development and running costs.&lt;/li&gt;
-  &lt;li&gt;In order to provide an acceptable experience for everyone, we might impose some limits in the app, since we have some infrastructure constraints and usage quota imposed by networks we connect to. We try our best to give users a better experience as we continue working on this.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;how-it-is-done&quot;&gt;How it is done&lt;/h5&gt;
-
-&lt;ul&gt;
+  &lt;li&gt;In order to provide an acceptable experience for everyone, we might impose some limits in the app, since we have some infrastructure constraints and usage quota imposed by networks we connect to. We try our best to give users a better experience as we continue working on this.&lt;/li&gt;
   &lt;li&gt;It allows multiple accounts of the same network linked in the application. One of the problems of using multiple accounts is logging in and out all the time. Once these accounts are linked, they can be used at the same time with no switching required.&lt;/li&gt;
   &lt;li&gt;It uses OAuth so that users authorize the access to their accounts without compromising their security (revealing their password).&lt;/li&gt;
   &lt;li&gt;We have made a decision to use browser-based OAuth flow, so that users can make sure they are securely connected to their social network website using their trusted browser. It eliminates the possibility of phishing attacks like &lt;a href=&quot;http://thehackernews.com/2014/08/hacking-gmail-account-mobile-app.html&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;It is not aiming to replace client apps for the social networks it connects to. It won’t end up implementing all the features of each social network either. All the activities displayed in the app link back to the original update and open in the native client of that network if one is already installed, which can be used for anything that’s missing here.
+  &lt;li&gt;It is not aiming to replace client apps for the social networks it connects to. It won’t end up implementing all the features of each social network either. All the posts displayed in the app link back to the original update and open in the native client of that network if one is already installed, which can be used for anything that’s missing here.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
